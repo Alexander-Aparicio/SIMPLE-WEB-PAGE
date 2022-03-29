@@ -1,4 +1,4 @@
-const { H1Inscripciones } = require("../components/inscripciones")
+const { H1Inscripciones } = require("../components/Inscripciones/Inscripciones")
 
 
 const Inscripciones = ()=>{
