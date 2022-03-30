@@ -1,13 +1,13 @@
 import Image from "next/image"
 import { P } from "../Globales/estilosGenerales"
-import { Article, ImgBox, TextBox, TitleH1, TitleH2 } from "./HomeStyles"
+import { Article, ContentBox, ImgBox, TextBox, TitleH1, TitleH2 } from "./HomeStyles"
 import imgMetodologia from "../../public/academiadebaile.png"
 import corner from "../../public/cornerOrange.png"
 
 const Metodologia=()=>{
 
     return(
-        <Article justify={'space-evenly'} background={'#FAF5FA'} margin={'0% 0% 50px 0%'}>
+        <ContentBox margin={'0% 0% 50px 0%'}>
             <ImgBox className="cornerRight" border={'trasnparent'}>
                 <Image src={corner}  alt={'esquina'} />
             </ImgBox>
@@ -26,7 +26,7 @@ const Metodologia=()=>{
                 <Image src={imgMetodologia} width={450} height={300} alt={'Academia de baile revolution'} />
             </ImgBox>
 
-        </Article>
+        </ContentBox>
     )
 }
 

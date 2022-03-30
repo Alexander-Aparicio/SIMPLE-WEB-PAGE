@@ -3,6 +3,7 @@ import { Main } from '../components/Globales/estilosGenerales';
 import Header from '../components/Globales/Header';
 import { Introduction } from '../components/Home/Introduction';
 import Metodologia from '../components/Home/Methodology';
+import { Schedules } from '../components/Home/Schedules';
 import { Slider, SliderTwo } from '../components/Home/SliderHome';
 
 export default function Home() {
@@ -22,7 +23,8 @@ export default function Home() {
       <Slider />
       <Introduction />
       <Metodologia />
-      <SliderTwo />
+      {/* <SliderTwo /> */}
+      <Schedules />
     </main>
     
   </> )

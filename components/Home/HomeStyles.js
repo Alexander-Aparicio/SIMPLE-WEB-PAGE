@@ -54,10 +54,37 @@ const Article = styled.article`
     justify-items: ${ props => (props.justifyItems ? props.justifyItems : '')};
     position: relative;
 `
+const ContentBox = styled.article`
+    width:100%;
+    display: ${ props => (props.display ? props.display : 'flex')};
+    flex-wrap: ${ props => (props.wrap ? props.wrap : 'wrap')};
+    justify-content: ${ props => (props.justify ? props.justify : 'space-evenly')};
+    align-items: ${ props => (props.alignItems ? props.alignItems : 'center')};
+    padding: ${ props => (props.padding ? props.padding : '4% 0%')};
+    margin: ${ props => (props.margin ? props.margin : '0% 0%')};
+    background-color: ${ props => (props.background ? props.background : '#FAF5FA')};
+    border-radius: ${ props => (props.brodes ? props.brodes : '0')};
+    grid-template-columns: ${ props => (props.gridColumns ? props.gridColumns : '')};
+    grid-template-rows: ${ props => (props.gridRows ? props.gridRows : '')};
+    grid-gap: ${ props => (props.gridGap ? props.gridGap : '')};
+    align-content: ${ props => (props.alignContent ? props.alignContent : '')};
+    position: relative;
+` 
+
 const TextBox = styled(Div)`
 max-width: 660px;
 align-items: flex-start;
 justify-content: flex-start;
+`
+const CardText = styled(Div)`
+background-color: ${ props => (props.background ? props.background : '#FAF5FA')};
+max-width: ${ props => (props.maxWidth ? props.maxWidth : '360px')} ;
+align-items: ${ props => (props.align ? props.align : 'flex-start')};
+justify-content: ${ props => (props.justify ? props.justify : 'flex-start')};
+border: ${ props => (props.border ? props.border : 'solid 1px #E2DDDD')};
+border-radius: ${ props => (props.radius ? props.radius : '20px')};
+padding: 20px;
+position: relative;
 `
 const ImgBox = styled(Div)`
 width:100%;
@@ -75,5 +102,7 @@ export{
     TitleH2,
     TitleH3,
     TextBox,
-    ImgBox
+    ImgBox,
+    ContentBox,
+    CardText
 }
