@@ -1,12 +1,21 @@
-import { P } from "../Globales/estilosGenerales"
+import styled from "styled-components"
+import { Article, TextBox,P } from "../Globales/StyleBase"
 import { BoxVideo, Video } from "../Globales/Video"
-import { Article, TextBox, TitleH2 } from "./HomeStyles"
 
+const IntroductionSection = styled(Article)`
+justify-content: space-evenly;
+`
+const Box = styled(TextBox)``
+const VideoBox = styled(BoxVideo)``
+const Text = styled(P)`
+line-height: 2;
+`
 
 const Introduction = ()=>{
     return(
-        <Article justify={'space-evenly'}>
-            <BoxVideo>
+        <IntroductionSection>
+
+            <VideoBox>
                 <Video 
                 url="http://localhost:3000/prueba.mp4"
                 volumen={1}
@@ -14,9 +23,10 @@ const Introduction = ()=>{
                 height={'100%'} 
                 className="reproductor"
                 />
-            </BoxVideo>
-            <TextBox>
-                <P lineh={2}>
+            </VideoBox>
+
+            <Box>
+                <Text>
                 📌 Clases dirigido para niñas y jóvenes a partir de 09 años en adelante. <br/>
 
                 📌 Puedes venir con un acompañante (familiar, pareja o amigo).<br/>
@@ -26,9 +36,10 @@ const Introduction = ()=>{
                 📌 Tienes la posibilidad de formar parte del elenco de la academia.<br/>
 
                 📌 Accedes a descuentos para clases de tenis de mesa en la academia revolution.
-                </P>
-            </TextBox>
-        </Article>
+                </Text>
+            </Box>
+
+        </IntroductionSection>
     )
 }
 

@@ -6,8 +6,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
+    
   }
+  html{font-size: 10px;}
   main{
     width: 100%;
     max-width:1600px;

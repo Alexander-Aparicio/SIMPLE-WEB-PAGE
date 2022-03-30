@@ -1,10 +1,18 @@
 import Image from "next/image";
 import styled from "styled-components";
-import { P, TitleH2 } from "../Globales/estilosGenerales";
-import { CardText, ContentBox, ImgBox } from "./HomeStyles";
+import { CardText, ContentBox, ImgBox , P, TitleH2 } from "../Globales/StyleBase";
 import Noelia from "../../public/prof-Noelia-Castro.png"
 
-const Horario = styled(P)`
+const ScheduleSection = styled(ContentBox)``
+
+const Box = styled(CardText)``
+
+const Title = styled(TitleH2)`
+text-align: left;
+padding-bottom: 0;
+padding-top: 0;
+`
+const Shedule = styled(P)`
 margin: 0;
 margin-left: 20px;
 padding: 10px;
@@ -15,29 +23,28 @@ font-size: 2rem;
 font-family: caveat;
 padding: 1.5% 6%;
 `
-const Titulo = styled(TitleH2)`
-text-align: left;
-padding-bottom: 0;
-padding-top: 0;
-`
+const Text = styled(P)``
+
+const Card = styled(ImgBox)``
 
 const Schedules = ()=>{
 
     return(
-        <ContentBox>
+        <ScheduleSection>
 
-            <CardText >
-                <Titulo>Horarios:</Titulo>
-                <Horario>Sábados: 11 AM - 1 PM</Horario>
-                <P>Próximo nuevo horario:<br/>
-                Sábados de 9 AM - 11 AM
-                </P>
-            </CardText>
+            <Box>
+                <Title>Horarios:</Title>
+                <Shedule>Sábados: 11 AM - 1 PM</Shedule>
+                <Text>
+                    Próximo nuevo horario:<br/>
+                    Sábados de 9 AM - 11 AM
+                </Text>
+            </Box>
             
-            <ImgBox>
+            <Card>
                 <Image src={Noelia} width={673} height={430} alt={'Profesora Noelia'} />
-            </ImgBox>
-        </ContentBox>
+            </Card>
+        </ScheduleSection>
     )
 }
 

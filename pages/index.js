@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import { Main } from '../components/Globales/estilosGenerales';
+import { Main } from '../components/Globales/StyleBase';
 import Header from '../components/Globales/Header';
 import { Introduction } from '../components/Home/Introduction';
 import Metodologia from '../components/Home/Methodology';
+import { Price } from '../components/Home/Price';
 import { Schedules } from '../components/Home/Schedules';
-import { Slider, SliderTwo } from '../components/Home/SliderHome';
+import { Slider} from '../components/Home/SliderHome';
 
 export default function Home() {
   return (<>
@@ -25,6 +26,7 @@ export default function Home() {
       <Metodologia />
       {/* <SliderTwo /> */}
       <Schedules />
+      <Price />
     </main>
     
   </> )
