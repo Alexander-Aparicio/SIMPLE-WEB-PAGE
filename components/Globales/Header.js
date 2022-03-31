@@ -8,7 +8,7 @@ const Logo = ({nameOne, nameTwo, logo})=>{
         <Figure>
             <Image src={logo} alt={`${nameOne} ${nameTwo}`} width={40} height={50} />
             <figcaption>
-                <p>{nameOne}</p>
+                <p>{nameOne}</p><br/>
                 <p>{nameTwo}</p>
             </figcaption>
         </Figure>

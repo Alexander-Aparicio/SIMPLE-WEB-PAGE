@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { CardText, ContentBox, ImgBox , P, TitleH2 } from "../Globales/StyleBase";
 import Noelia from "../../public/prof-Noelia-Castro.png"
 
-const ScheduleSection = styled(ContentBox)``
+const ScheduleSection = styled(ContentBox)`
+background-color: transparent;
+`
 
 const Box = styled(CardText)``
 

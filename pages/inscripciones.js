@@ -1,11 +1,16 @@
-const { H1Inscripciones } = require("../components/Inscripciones/Inscripciones")
+import Header from "../components/Globales/Header"
+import { TitleH1 } from "../components/Globales/StyleBase"
+
+const { Inscription } = require("../components/Inscripciones/Inscripciones")
 
 
 const Inscripciones = ()=>{
 
     return(
         <>
-        <H1Inscripciones>Inscripciones para la academia</H1Inscripciones>
+        <Header />
+        <TitleH1>Inscripciones para la academia</TitleH1>
+        <Inscription />
         </>
     )
 }

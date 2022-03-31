@@ -2,24 +2,27 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  *{margin: 0; padding: 0;}
+  html{box-sizing: border-box; scroll-behavior: smooth; font-size: 10px;}
+  *,*::after, *::before{box-sizing: inherit; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+  a{text-decoration: none;}
+  button,input,select{border-style: none; outline: inherit;}
+  button,select,input[type="submit"]{cursor: pointer;}
+  header,main,footer{width: 100%;}
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
   }
-  html{font-size: 10px;}
   main{
     width: 100%;
     max-width:1600px;
     margin:auto;
     margin-top: 0px;
     background-color:#fff;
-    display: ${props => props.flex ? props.flex : 'block'};
-    align-items: ${props => props.align ? props.align : ''};
-    flex-direction: ${props => props.direction ? props.direction : ''};
-    position: ${props=> props.position ? props.position : ''};
-    padding-bottom:${props=> props.padding ? props.padding : '50px'};
+    display:block;
+    padding-bottom:50px;
     @media (min-width:415px){
         /* margin-top: 8.5vh; */
         min-height:81.5vh;

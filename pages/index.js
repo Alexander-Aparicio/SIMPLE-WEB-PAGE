@@ -6,6 +6,9 @@ import Metodologia from '../components/Home/Methodology';
 import { Price } from '../components/Home/Price';
 import { Schedules } from '../components/Home/Schedules';
 import { Slider} from '../components/Home/SliderHome';
+import MediosDePago from '../components/Home/PaymentMethods';
+import { SampleClass } from '../components/Home/SampleClass';
+import { DanceRoom } from '../components/Home/DanceRoom';
 
 export default function Home() {
   return (<>
@@ -27,6 +30,9 @@ export default function Home() {
       {/* <SliderTwo /> */}
       <Schedules />
       <Price />
+      <MediosDePago />
+      <SampleClass />
+      <DanceRoom />
     </main>
     
   </> )

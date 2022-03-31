@@ -40,8 +40,14 @@ const MySlide = ({children, ...props})=>{
     return(
 
         <BoxSlide>
-            <Image src={props.imgBig} alt={props.alt} width={1570} height={600} priority/>
+
+            <Image src={props.imgBig} 
+            alt={props.alt} 
+            width={1570} height={600} 
+            priority/>
+
             <figcaption>{children}</figcaption>
+            
         </BoxSlide> 
 
     )

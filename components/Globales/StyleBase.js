@@ -11,7 +11,7 @@ from {
 const TitleH1 = styled.h1`
     font-family: ${ props => (props.font ? props.font : "'Poppins',sans-serif")};
     font-size:${ props => (props.size ? props.size : '3rem')};
-    color: ${props => (props.color ? props.color : '#c83067')};
+    color: ${props => (props.color ? props.color : 'rgba(215, 33, 186, 0.86)')};
     text-align: ${ props => props.align ? props.align : "center"};
     padding: ${ props => (props.padding ? props.padding : '1.5% 6%')};
     margin: ${ props => (props.margin ? props.margin : '25px 0px')};
@@ -24,7 +24,7 @@ const TitleH2 = styled.h2`
     font-family: ${ props => (props.font ? props.font : "'Poppins',sans-serif")};
     font-weight:600;
     font-size: ${ props => (props.size ? props.size : '2.7rem')};
-    color: ${props => (props.color ? props.color : '#c83067')};
+    color: ${props => (props.color ? props.color : 'rgba(215, 33, 186, 0.86)')};
     text-align: ${ props => props.align || "center"};
     padding: ${ props => (props.padding ? props.padding : '1.5% 6%')};
     margin: ${ props => (props.margin ? props.margin : '25px 0px')};
@@ -36,7 +36,7 @@ const TitleH3 = styled.h3`
     width:100%;
     font-family: ${ props => (props.font ? props.font : "'Poppins',sans-serif")};
     font-size: ${ props => (props.size ? props.size : '2.7rem')};
-    color: ${props => (props.color ? props.color : '#c83067')};
+    color: ${props => (props.color ? props.color : 'rgba(215, 33, 186, 0.86)')};
     text-align: ${ props => props.align || "center"};
     padding: ${ props => (props.padding ? props.padding : '1.5% 6%')};
     margin: ${ props => (props.margin ? props.margin : '25px 0px')};
@@ -64,6 +64,16 @@ const Page = styled.article`
     }
 `
 const P = styled.p`
+padding: ${ props => (props.padding ? props.padding : '1.5% 6%')};
+color: ${ props => (props.color ? props.color : '#1e1e1e')};
+width: 100%;
+font-weight:300;
+font-family:${ props => (props.font ? props.font : "'Poppins',sans-serif")};
+font-size:${ props => (props.size ? props.size : '16px')};
+text-align: ${props => props.align ? props.align : "left"};
+line-height: ${props => props.lineh ? props.lineh : "normal"};
+`
+const Ol = styled.ol`
 padding: ${ props => (props.padding ? props.padding : '1.5% 6%')};
 color: ${ props => (props.color ? props.color : '#1e1e1e')};
 width: 100%;
@@ -111,7 +121,6 @@ const ContentBox = styled.article`
     width:100%;
     display: ${ props => (props.display ? props.display : 'flex')};
     flex-wrap: ${ props => (props.wrap ? props.wrap : 'wrap')};
-    justify-content: ${ props => (props.justify ? props.justify : 'center')};
     align-items: ${ props => (props.alignItems ? props.alignItems : 'center')};
     padding: ${ props => (props.padding ? props.padding : '4% 0%')};
     justify-content: ${ props => (props.justify ? props.justify : 'space-evenly')};
@@ -376,5 +385,6 @@ export{
     H2Slide,
     PSlide,
     BoxCta,
-    CtaButton
+    CtaButton,
+    Ol
 }
