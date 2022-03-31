@@ -7,6 +7,7 @@ max-width:300px
 `
 const Title = styled(TitleH2)`
 text-align: left;
+margin:0;
 `
 const Text = styled(P)`
 color:#EB6A50;

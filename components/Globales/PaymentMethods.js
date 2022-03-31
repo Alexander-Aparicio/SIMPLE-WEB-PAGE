@@ -1,77 +1,51 @@
 import Image from "next/image"
-import styled from "styled-components";
-import { P, TitleH3 } from "./StyleBase";
+import { SectionMediosPago, TitleM, Bcp, Interbank, Yape, ShapeSup, ShapeInf } from "./PaymentMStyle"
+import cornerLeft from "../../public/cornerOrange.png"
+import cornerRight from "../../public/cornerLeft.png"
+import bcp from "../../public/bcp.svg"
+import interbank from "../../public/interbank.svg"
+import yape from "../../public/yape.svg"
 
-const SectionMediosPago = styled.article`
-    width: 100%;
-    padding: 0px 5% 20px 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: solid 1px #51515130;
-    position:relative;
-    h3{
-        margin-bottom:10px;
-    }
-`
-const TitleM = styled(TitleH3)``
-const TextMP = styled(P)``
-
-const Banco = styled.figure`
-    max-width: 280px;
-    margin: 20px 15px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    flex-direction:column;
-    img{
-        height:40px !important;
-        width:auto !important;
-        /* margin-bottom: 12px !important; */
-    }
-    figcaption{
-        width:100%;
-        padding:10px;
-        display:flex;
-        justify-content:center;
-        flex-wrap:wrap;
-        p{
-            font-size:1.4rem;
-        }
-    }
-`
-const ShapeSup = styled.div`
-position:absolute;
-top:0;
-left:0;
-width:15%;
-`
-
-const ShapeInf = styled.div`
-position:absolute;
-bottom:-1.5px;
-right:0;
-width:12%;
-`
-
-const Medios = ({cb,ci,logo,alt})=>{
+const MediosDePago = ()=>{
 
     return(
-        <Banco>
-            <Image src={logo} alt={alt}/>
-            <figcaption>
-                <TextMP align={'center'}>{cb}</TextMP>
-                <TextMP align={'center'}>{ci}</TextMP>
-            </figcaption>
-        </Banco>
+
+        <SectionMediosPago>
+
+            <TitleM >Medios de pago</TitleM>
+
+            <Bcp 
+            cb='N° de cuenta: 194 97343462 0 27'
+            ci='CI: 003-898-013263828153-46'
+            logo={bcp}
+            alt='logo-bcp'
+            />
+
+            <Interbank 
+            cb='N° de cuenta: 898 3263828153'
+            ci='CI: 002-19419734346202791'
+            logo={interbank}
+            alt='logo-interbank'
+            />
+
+            <Yape 
+            cb='Número: +51 957 731 940'
+            ci='Titular: Joel Moises Larico P.'
+            logo={yape}
+            alt='logo-yape'
+            />
+
+            <ShapeSup className="sup">
+                <Image src={cornerLeft} alt='mancha-adorno' layout="intrinsic"/>
+            </ShapeSup>
+            
+            <ShapeInf className="inf">
+                <Image src={cornerRight} alt='mancha-adorno' layout="intrinsic" />
+            </ShapeInf>
+            
+        </SectionMediosPago>
+
     )
-} 
+}
 
-const Bcp = ({cb,ci,logo,alt})=> <Medios cb={cb} ci={ci} logo={logo} alt={alt} />
-
-const Interbank = ({cb,ci,logo,alt})=> <Medios cb={cb} ci={ci} logo={logo} alt={alt}  />
- 
-const Yape = ({cb,ci,logo,alt})=> <Medios cb={cb} ci={ci} logo={logo} alt={alt} />
-
-
-export { SectionMediosPago, TitleM, Bcp, Interbank, Yape , ShapeSup, ShapeInf }
+export default MediosDePago

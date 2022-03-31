@@ -13,6 +13,7 @@ const Title = styled(TitleH2)`
 text-align: left;
 padding-bottom: 0;
 padding-top: 0;
+margin:0;
 `
 const Shedule = styled(P)`
 margin: 0;
@@ -24,6 +25,7 @@ color: #fff;
 font-size: 2rem;
 font-family: caveat;
 padding: 1.5% 6%;
+margin-bottom: 10px;
 `
 const Text = styled(P)``
 

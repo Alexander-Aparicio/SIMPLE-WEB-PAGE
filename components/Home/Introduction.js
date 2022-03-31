@@ -17,7 +17,7 @@ const Introduction = ()=>{
 
             <VideoBox>
                 <Video 
-                url="http://localhost:3000/prueba.mp4"
+                url="http://localhost:3000/muestraA.mp4"
                 volumen={1}
                 width={'100%'}
                 height={'100%'} 
