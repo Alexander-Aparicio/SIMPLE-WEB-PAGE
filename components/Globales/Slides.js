@@ -41,10 +41,12 @@ const MySlide = ({children, ...props})=>{
 
         <BoxSlide>
 
-            <Image src={props.imgBig} 
+            {(typeof window !== 'undefined') ? (window.matchMedia("(min-width: 415px)").matches ? <Image src={props.imgBig} alt={props.alt} width={1570} height={600} priority/> : <Image src={props.imgSmall} alt={props.alt} width={450} height={750} priority/>): null} 
+            
+            {/* <Image src={props.imgBig} 
             alt={props.alt} 
             width={1570} height={600} 
-            priority/>
+            priority/> */}
 
             <figcaption>{children}</figcaption>
             

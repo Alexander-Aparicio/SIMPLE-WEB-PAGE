@@ -13,7 +13,12 @@ border: solid 1px transparent;
 max-height: revert;
 background-color: transparent;
 `
-const Box = styled(TextBox)``
+const Box = styled(TextBox)`
+border-radius: 15px;
+padding:50px 5px;
+padding-left: 15px;
+border: solid 1px rgba(118,0,120,0.1);
+`
 
 const Title = styled(TitleH2)`
 text-align: left;

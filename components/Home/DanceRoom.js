@@ -11,6 +11,7 @@ position: relative;
 background-color: transparent;
 `
 const Card = styled(ImgBox)`
+margin:15px !important;
 border: solid 1px transparent;
 border-radius: 15px;
 img{

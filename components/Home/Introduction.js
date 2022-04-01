@@ -5,8 +5,17 @@ import { BoxVideo, Video } from "../Globales/Video"
 const IntroductionSection = styled(Article)`
 justify-content: space-evenly;
 `
-const Box = styled(TextBox)``
-const VideoBox = styled(BoxVideo)``
+const Box = styled(TextBox)`
+padding-top: 30px;
+padding-bottom: 30px;
+    @media (min-width: 1060px){
+        padding-top: revert;
+        padding-bottom: revert;
+    }
+`
+const VideoBox = styled(BoxVideo)`
+box-shadow: 1px 2px 3px #0005;
+`
 const Text = styled(P)`
 line-height: 2;
 `

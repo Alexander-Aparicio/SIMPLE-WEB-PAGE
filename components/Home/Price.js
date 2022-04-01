@@ -1,7 +1,9 @@
 import styled from "styled-components";
-import { ContentBox, TextBox, P, TitleH2 } from "../Globales/StyleBase";
+import { ContentBox, TextBox, P, TitleH2, CtaButton } from "../Globales/StyleBase";
 
-const PricingSection = styled(ContentBox)``
+const PricingSection = styled(ContentBox)`
+margin:4% 0% 4% 0%;
+`
 const Box = styled(TextBox)`
 max-width:300px
 `
@@ -27,6 +29,7 @@ color: #ffffff;
 padding: 15px 15px;
 border-radius: 5px;
 font-size: 2rem;
+box-shadow: 1px 2px 3px #0005;
 `
 
 const Price = ()=>{

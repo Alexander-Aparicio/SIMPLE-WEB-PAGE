@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { EffectFade, Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import "swiper/css/effect-fade";
 import styled from "styled-components"
 import { MySlide } from '../Globales/Slides';
 import { Slide,SlideBox,H1Slide,H2Slide,PSlide,BoxCta,CtaButton } from '../Globales/StyleBase';
@@ -30,7 +31,7 @@ const Slider = () => {
     <SlideSection>
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[EffectFade, Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
@@ -38,28 +39,72 @@ const Slider = () => {
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+      effect={"fade"}
+      autoplay={{delay: 2500, disableOnInteraction:false}}
     >
       <SwiperSlide>
         <MySlide 
          imgBig='/slide1.jpg'
+         imgSmall='/slide1m.jpg'
          alt='Academia Revolution'>
 
           <SlideH>
-
           <TitlePage>Academia de Baile</TitlePage>
-
           <Text>
               Desarrolla tus habilidades artísticas.
           </Text>
-
           </SlideH>
-
         </MySlide>
       </SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
+  
+      <SwiperSlide>
+        <MySlide 
+            imgBig='/slide2.jpg'
+            imgSmall='/slide2m.jpg'
+            alt='Academia Revolution'>
+
+            <SlideH>
+            <TitlePage>Academia de Baile</TitlePage>
+            <Text>
+                Desarrolla tus habilidades artísticas.
+            </Text>
+            </SlideH>
+          </MySlide>
+      </SwiperSlide>
+
+      <SwiperSlide>
+
+        <MySlide 
+          imgBig='/slide3.jpg'
+          imgSmall='/slide3m.jpg'
+          alt='Academia Revolution'>
+
+          <SlideH>
+          <TitlePage>Academia de Baile</TitlePage>
+          <Text>
+              Desarrolla tus habilidades artísticas.
+          </Text>
+          </SlideH>
+        </MySlide>
+
+      </SwiperSlide>
+
+      <SwiperSlide>
+
+        <MySlide 
+          imgBig='/slide4.jpg'
+          imgSmall='/slide4m.jpg'
+          alt='Academia Revolution'>
+
+          <SlideH>
+          <TitlePage>Academia de Baile</TitlePage>
+          <Text>
+              Desarrolla tus habilidades artísticas.
+          </Text>
+          </SlideH>
+        </MySlide>
+
+      </SwiperSlide>
     </Swiper>
     </SlideSection>
   );

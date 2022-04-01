@@ -5,20 +5,21 @@ const Encabezado = styled.header`
     max-width:1600px;
     margin:auto;
     height: 10vh;
-    max-height:74px;
+    max-height:76px;
     display:flex;
     justify-content:space-between;
-    background-color:#181818d6;
+    background-color:transparent;
     border-bottom: solid 1px #f4f4f424;
     padding-left:5%;
     padding-right:5%;
-    position:sticky;
+    position:fixed;
     top:0;
     left:0;
     right:0;
     z-index: 99999;
     @media (min-width:415px){
         background-color:rgba(118, 0, 120, 0.04);
+        position: sticky;
     }
 `
 const Figure = styled.figure`
@@ -26,14 +27,14 @@ const Figure = styled.figure`
     justify-content: center;
     flex-wrap:wrap;
     align-items:center;
-    margin-top: 10px;
+    margin-top: 6px;
     max-height: 9vh;
     img{
         width: 40px;
     }
     figcaption{
         font-size:20px;
-        color: #000;
+        color: #fff;
         margin-top: 5px;
         font-family: 'Caveat', cursive;
         font-weight:bold;
@@ -41,6 +42,11 @@ const Figure = styled.figure`
     }
     figcaption p{
         line-height: 0;
+    }
+    @media (min-width:415px){
+        figcaption{
+            color: #000;
+        }
     }
 `
 

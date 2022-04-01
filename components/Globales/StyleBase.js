@@ -320,9 +320,9 @@ const CtaButton = styled.button`
     font-family: 'Poppins', sans-serif;
     border-radius:3px;
     animation: ${openOpacity} 1s linear;
-    @media (min-width:415px){
+    /* @media (min-width:415px){
         display:none;
-    }
+    } */
     &:hover{
         border: solid 1px transparent;
     }

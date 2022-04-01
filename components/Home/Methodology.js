@@ -5,11 +5,26 @@ import imgMetodologia from "../../public/academiadebaile.png"
 import corner from "../../public/cornerOrange.png"
 
 const MethodologySection = styled(ContentBox)`
-margin:0% 0% 50px 0%;
+margin:4% 0% 4% 0%;
+padding-top: 30px;
 position: relative;
+@media (min-width: 1060px){
+        padding-top: 4%;
+    }
 `
 const Card = styled(ImgBox)`
 border: solid 1px transparent;
+padding-top: 30px;
+padding-bottom: 30px;
+padding-right: 5%;
+padding-left: 5%;
+    @media (min-width: 415px){
+        padding-right: revert;
+        padding-left: revert;
+    }
+    @media (min-width: 1060px){
+        padding: revert;
+    }
 `
 const Box = styled(TextBox)``
 
@@ -17,6 +32,7 @@ const Title = styled(TitleH2)`
 text-align: left;
 padding: 1.5% 6% 0% 0%;
 margin: 0% 6%;
+z-index:2;
 /* @media (min-width:930px) {} */
 `
 const Text = styled(P)`

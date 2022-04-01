@@ -5,9 +5,17 @@ import Noelia from "../../public/prof-Noelia-Castro.png"
 
 const ScheduleSection = styled(ContentBox)`
 background-color: transparent;
+padding: 6% 0%;
 `
 
-const Box = styled(CardText)``
+const Box = styled(CardText)`
+margin-top: 30px;
+margin-bottom: 30px;
+    @media (min-width: 1060px){
+        margin-top: revert;
+        margin-bottom: revert;
+    }
+`
 
 const Title = styled(TitleH2)`
 text-align: left;

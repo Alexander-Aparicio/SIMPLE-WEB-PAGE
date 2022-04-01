@@ -3,6 +3,8 @@ import { TextBox,P, ContentBox, TitleH2, BoxCta, CtaButton } from "../Globales/S
 import { BoxVideo, Video } from "../Globales/Video"
 
 const SampleClassSection = styled(ContentBox)`
+margin:4% 0% 4% 0%;
+padding-bottom: 6%;
 `
 const Title = styled(TitleH2)`
 text-align: left;
@@ -18,7 +20,15 @@ font-size: 2rem;
 margin: auto;
 margin-top: 20px;
 `
-const VideoBox = styled(BoxVideo)``
+const VideoBox = styled(BoxVideo)`
+box-shadow: 1px 2px 3px #0005;
+margin-top: 30px;
+margin-bottom: 30px;
+    @media (min-width: 1060px){
+        margin-top: revert;
+        margin-bottom: revert;
+    }
+`
 const Text = styled(P)`
 line-height: 2;
 `
