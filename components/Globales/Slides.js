@@ -1,28 +1,28 @@
 import Image from "next/image";
 import styled from "styled-components"
+import useWindowDimensions from "../../helpers/WindowDimension";
 
-const BoxSlide = styled.figure`
+const BoxSlide = styled.section`
     width:100%;
     margin:auto;
     margin-top:0;
     display: flex;
     justify-content:center;
     align-items:center;
+    position:relative;
     @media (min-width:415px){
         width:90%;
     }
-    
-    position:relative;
     @media (min-width: 800px){
         margin:auto;
         max-height:400px;
     }
-    & img{
+    img{
         width:100%;
         object-fit:cover;
         object-position: center bottom;
     }
-    & figcaption{
+    & div{
         position: absolute;
         top:0;
         right:0;
@@ -37,21 +37,19 @@ const BoxSlide = styled.figure`
 `
 const MySlide = ({children, ...props})=>{
 
-    return(
+    const {width} = useWindowDimensions()
 
+    return(
         <BoxSlide>
 
-            {(typeof window !== 'undefined') ? (window.matchMedia("(min-width: 415px)").matches ? <Image src={props.imgBig} alt={props.alt} width={1570} height={600} priority/> : <Image src={props.imgSmall} alt={props.alt} width={450} height={750} priority/>): null} 
-            
-            {/* <Image src={props.imgBig} 
-            alt={props.alt} 
-            width={1570} height={600} 
-            priority/> */}
+        {width > 450 
+            ?(<Image src={props.imgBig} alt={props.alt} width={1570} height={600} />) 
+            :(<Image src={props.imgSmall} alt={props.alt} width={450} height={750} />)
+        } 
 
-            <figcaption>{children}</figcaption>
-            
+        <div>{children}</div>
+
         </BoxSlide> 
-
     )
 }
 

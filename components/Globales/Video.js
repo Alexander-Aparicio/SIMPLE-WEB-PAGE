@@ -1,7 +1,7 @@
 import ReactPlayer from "react-player";
 import styled from "styled-components";
 
-const BoxVideo = styled.figure`
+const BoxVideo = styled.div`
 position:relative;
 width:100%;
 max-width:400px;

@@ -2,6 +2,13 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Caveat', cursive;
+    src: url('../public/fonts/Caveat/static/Caveat-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
   *{margin: 0; padding: 0;}
   html{box-sizing: border-box; scroll-behavior: smooth; font-size: 10px;}
   *,*::after, *::before{box-sizing: inherit; -webkit-tap-highlight-color: rgba(0,0,0,0);}
