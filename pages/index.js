@@ -10,6 +10,7 @@ import { SampleClass } from '../components/Home/SampleClass';
 import { DanceRoom } from '../components/Home/DanceRoom';
 import Footer from '../components/Globales/Footer';
 import Ubicacion from '../components/Home/Location';
+import WhatsApp from '../components/Globales/WhatsApp';
 
 export default function Home() {
   return (<>
@@ -28,10 +29,10 @@ export default function Home() {
       {/* <SliderTwo /> */}
       <Schedules />
       <Price />
-      <MediosDePago />
-      <SampleClass />
       <DanceRoom />
+      <SampleClass />
       <Ubicacion />
+      <WhatsApp />
     </main>
     <Footer />
     

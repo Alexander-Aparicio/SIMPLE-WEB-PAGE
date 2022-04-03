@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
     background-color:#fff;
     display:block;
     padding-bottom:50px;
+    position: relative;
     @media (min-width:415px){
         /* margin-top: 8.5vh; */
         min-height:81.5vh;

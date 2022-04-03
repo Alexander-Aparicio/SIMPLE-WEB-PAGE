@@ -70,17 +70,18 @@ const Navbar = styled.nav`
 const OptionMenu = styled.p`
     font-size: 1.7rem;
     cursor:pointer;
-    color: #f4f4f4;
+    color: #000;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500 ;
     a{
-        color: #f4f4f4;
+        color: #000;
         font-family: 'Poppins', sans-serif;
         &:hover{
-            color: yellow;
+            color: #CD55BA;
         }
     }
     & .seleccionado{
-        color: #ffe014 !important;
+        color: #CD55BA !important;
     }
 `
 

@@ -4,6 +4,7 @@ import { TitleH1 } from "../components/Globales/StyleBase"
 import MediosDePago from "../components/Globales/PaymentMethods"
 import Poster from '../components/Inscripciones/Poster';
 import Footer from '../components/Globales/Footer';
+import WhatsApp from '../components/Globales/WhatsApp';
 
 
 const { Inscription } = require("../components/Inscripciones/Inscripciones")
@@ -25,6 +26,7 @@ const Inscripciones = ()=>{
             <Inscription />
             <MediosDePago />
             <Poster />
+            <WhatsApp />
         </main>
 
         <Footer />
