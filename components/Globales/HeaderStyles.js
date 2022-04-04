@@ -8,11 +8,11 @@ const Encabezado = styled.header`
     max-height:76px;
     display:flex;
     justify-content:space-between;
-    background-color:transparent;
+    background-color:${props => (props.position ? props.background :'transparent') };
     border-bottom: solid 1px #f4f4f424;
     padding-left:5%;
     padding-right:5%;
-    position:fixed;
+    position:${props => (props.position ? props.position :'fixed') };
     top:0;
     left:0;
     right:0;

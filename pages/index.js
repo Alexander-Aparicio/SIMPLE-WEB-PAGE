@@ -11,6 +11,7 @@ import { DanceRoom } from '../components/Home/DanceRoom';
 import Footer from '../components/Globales/Footer';
 import Ubicacion from '../components/Home/Location';
 import WhatsApp from '../components/Globales/WhatsApp';
+import MenuMobile from '../components/Globales/MenuHamburguesa';
 
 export default function Home() {
   return (<>
@@ -33,6 +34,7 @@ export default function Home() {
       <SampleClass />
       <Ubicacion />
       <WhatsApp />
+      <MenuMobile />
     </main>
     <Footer />
     

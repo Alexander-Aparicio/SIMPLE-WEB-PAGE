@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import Link from 'next/link'
 import useWindowDimensions from "../../helpers/WindowDimension"
@@ -68,20 +67,18 @@ const Navegation =( {home, blog, tienda, clase} )=>{
 }
 
 
-const Header = ()=>{
+const Header = (props)=>{
 
     const {width} = useWindowDimensions()
 
     return(
 
-        <Encabezado>
+        <Encabezado position={props.v} background={props.x}>
             <Logo logo={Logotipo} nameOne={'REVOLUTION'}  nameTwo={'DANCE'} />
             {width > 600 ? <Navegation home="Home" blog="Inscribirme" /> : null}
             
         </Encabezado>
-        
     )
-
 }
 
 export default Header
