@@ -28,7 +28,7 @@ const MenuMobile = ()=>{
     const handleMenu = ()=>{
 
         setOpenMenu(!openMenu)
-      
+
     }
 
     return(

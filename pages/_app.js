@@ -44,13 +44,13 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     top:0;
     left: 0;
-    width: 10%;
+    width: 15%;
     z-index: 1;
     background-color: transparent;
     justify-content: flex-start;
     padding: 0px;
     @media (min-width:415px){
-      
+      width: 10%;
     }
   }
 `

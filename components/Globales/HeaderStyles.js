@@ -56,6 +56,9 @@ const Navbar = styled.nav`
     align-items:center;
     justify-content: space-around;
     width: 50%;
+    .seleccionado a{
+        color: #CD55BA;
+    }
     @media (min-width:600px){
         display: flex;
         flex-wrap:wrap;
@@ -70,7 +73,6 @@ const Navbar = styled.nav`
 const OptionMenu = styled.p`
     font-size: 1.7rem;
     cursor:pointer;
-    color: #000;
     font-family: 'Poppins', sans-serif;
     font-weight: 500 ;
     a{
@@ -79,9 +81,6 @@ const OptionMenu = styled.p`
         &:hover{
             color: #CD55BA;
         }
-    }
-    & .seleccionado{
-        color: #CD55BA !important;
     }
 `
 

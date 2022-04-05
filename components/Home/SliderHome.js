@@ -12,13 +12,13 @@ import styled from "styled-components"
 import { MySlide } from '../Globales/Slides';
 import { Slide,SlideBox,H1Slide,H2Slide,PSlide,BoxCta,CtaButton } from '../Globales/StyleBase';
 import slide1 from "../../public/slide1.jpg"
-import slide1m from "../../public/slide1m.jpg"
+import slide1m from "../../public/sliders/slide1.png"
 import slide2 from "../../public/slide2.jpg"
-import slide2m from "../../public/slide2m.jpg"
+import slide2m from "../../public/sliders/slide2.png"
 import slide3 from "../../public/slide3.jpg"
-import slide3m from "../../public/slide3m.jpg"
+import slide3m from "../../public/sliders/slide3.png"
 import slide4 from "../../public/slide4.jpg"
-import slide4m from "../../public/slide4m.jpg"
+import slide4m from "../../public/sliders/slide4.png"
 
 const SlideSection = styled(SlideBox)`
 `

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Header from "../components/Globales/Header"
-import { TitleH1 } from "../components/Globales/StyleBase"
 import MediosDePago from "../components/Globales/PaymentMethods"
 import Poster from '../components/Inscripciones/Poster';
 import Footer from '../components/Globales/Footer';

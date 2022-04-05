@@ -3,8 +3,6 @@ import styled from "styled-components"
 import whatsApp from "../../public/logos/whatsApp.svg"
 
 const Contact = styled.div`
-    width:70px;
-    height: 70px;
     position:fixed;
     bottom:24%;
     right:3%;
@@ -30,7 +28,7 @@ const WhatsApp = ()=>{
 
             <Contact>
                 <a href="https://api.whatsapp.com/send?phone=51957731940" rel="nofollow noreferrer" target="_blank" >
-                    <Image src={whatsApp} layout="fill" alt="Botón de whatsapp" />
+                    <Image src={whatsApp} width={70} height={70} alt="Botón de whatsapp" />
                 </a> 
             </Contact>
 

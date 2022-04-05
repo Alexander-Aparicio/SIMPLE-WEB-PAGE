@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { CardText, ContentBox, ImgBox , P, TitleH2 } from "../Globales/StyleBase";
 import Noelia from "../../public/prof-Noelia-Castro.png"
+import clip from "../../public/clip.svg"
 
 const ScheduleSection = styled(ContentBox)`
 background-color: transparent;
@@ -9,8 +10,16 @@ padding: 6% 0%;
 `
 
 const Box = styled(CardText)`
-margin-top: 30px;
-margin-bottom: 30px;
+margin: 30px 5%;
+position: relative;
+& div{
+    position: absolute;
+    top:0;
+    left: -3px;
+}
+& div img{
+    border-radius: 15px;
+}
     @media (min-width: 1060px){
         margin-top: revert;
         margin-bottom: revert;
@@ -22,6 +31,8 @@ text-align: left;
 padding-bottom: 0;
 padding-top: 0;
 margin:0;
+font-family: 'caveat', cursive;
+font-size: 4rem;
 `
 const Shedule = styled(P)`
 margin: 0;
@@ -30,14 +41,19 @@ padding: 10px;
 background-color: #DC3FC3;
 width: auto;
 color: #fff;
-font-size: 2rem;
+font-size: 2.5rem;
 font-family: caveat;
 padding: 1.5% 6%;
 margin-bottom: 10px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
 `
 const Text = styled(P)``
 
-const Card = styled(ImgBox)``
+const Card = styled(ImgBox)`
+margin-left: 5%;
+margin-right:5%;
+`
 
 const Schedules = ()=>{
 
@@ -45,6 +61,10 @@ const Schedules = ()=>{
         <ScheduleSection>
 
             <Box>
+                <div>
+                <Image src={clip} width={40} height={60} />
+                </div>
+                
                 <Title>Horarios:</Title>
                 <Shedule>Sábados: 11 AM - 1 PM</Shedule>
                 <Text>

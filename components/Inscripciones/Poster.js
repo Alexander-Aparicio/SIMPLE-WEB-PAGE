@@ -33,8 +33,14 @@ justify-content: center;
 const Text = styled(P)`
 color: #fff;
 line-height: 2;
-font-size: 5rem;
+font-size: 3rem;
 text-align: center;
+@media (min-width:550px){
+    font-size: 5rem;
+}
+@media (min-width:415px){
+    font-size: 4rem;
+}
 `
 
 const Poster = ()=>{

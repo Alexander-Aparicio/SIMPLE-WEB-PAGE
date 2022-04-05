@@ -20,7 +20,7 @@ const BoxSlide = styled.section`
     img{
         width:100%;
         object-fit:cover;
-        object-position: center bottom;
+        object-position: center;
     }
     & div{
         position: absolute;

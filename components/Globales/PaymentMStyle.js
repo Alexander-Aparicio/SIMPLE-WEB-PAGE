@@ -52,7 +52,7 @@ const ShapeInf = styled.div`
 position:absolute;
 bottom:-1.5px;
 right:0;
-width:10%;
+width:13%;
 `
 
 const Medios = ({cb,ci,logo,alt})=>{
