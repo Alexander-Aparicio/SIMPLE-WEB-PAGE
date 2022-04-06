@@ -4,14 +4,11 @@ import { ContentBox, P, TextBox } from "../Globales/StyleBase";
 import poster from "../../public/integrantes-de-academia.png"
 
 const PosterSection = styled(ContentBox)`
-margin:50px 0% 50px 0%;
+margin:0px 0% 0px 0%;
 position: relative;
 background-color: transparent;
 padding: 0;
 `
-// const Card = styled(ImgBox)`
-// border: solid 1px transparent;
-// `
 const Box = styled(TextBox)`
 background-color: #0005;
 position: absolute;
@@ -23,13 +20,6 @@ max-width: revert;
 align-items: center;
 justify-content: center;
 `
-
-// const Title = styled(TitleH2)`
-// text-align: left;
-// padding: 1.5% 6% 0% 0%;
-// margin: 0% 6%;
-// /* @media (min-width:930px) {} */
-// `
 const Text = styled(P)`
 color: #fff;
 line-height: 2;

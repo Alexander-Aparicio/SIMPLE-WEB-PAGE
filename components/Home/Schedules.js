@@ -6,7 +6,9 @@ import clip from "../../public/clip.svg"
 
 const ScheduleSection = styled(ContentBox)`
 background-color: transparent;
-padding: 6% 0%;
+padding: 10% 0%;
+background-image: url('./fondo.jpg');
+background-position: center;
 `
 
 const Box = styled(CardText)`
@@ -53,6 +55,7 @@ const Text = styled(P)``
 const Card = styled(ImgBox)`
 margin-left: 5%;
 margin-right:5%;
+border-radius: 15px;
 `
 
 const Schedules = ()=>{

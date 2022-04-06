@@ -1,9 +1,11 @@
 import Image from "next/image"
 import styled from "styled-components"
 import {useState} from "react"
-import MobileNav from "./MobileNav"
 import btnClose from "../../public/logos/close.svg"
 import btnOpen from "../../public/logos/open.svg"
+import Link from "next/link";
+import { P, TitleH2 } from "./StyleBase"
+
 
 const Hamburger = styled.div`
     width:50px;
@@ -21,6 +23,38 @@ const Hamburger = styled.div`
     };
 `
 
+const MenuTitle = styled(TitleH2)`
+    margin-bottom: 0;
+`
+
+const UiMenu = styled.section`
+    display: ${ props => props.visible ? 'flex' : 'none'};
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(215,33,186,0.86); 
+    z-index:9999;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    width:100%; 
+    & p{
+        text-align:center;
+        padding: 1.5rem;
+    }
+
+    & p a{
+        color: #fff;
+        font-size:2.5rem;
+        font-family: 'Poppins', sans-serif;
+        margin: 20px 15px;
+        border-bottom: solid 1px transparent;
+    }
+`
+
 const MenuMobile = ()=>{
 
     const [openMenu, setOpenMenu] = useState(false)
@@ -28,23 +62,40 @@ const MenuMobile = ()=>{
     const handleMenu = ()=>{
 
         setOpenMenu(!openMenu)
-
     }
+    console.log(openMenu)
 
     return(
+        <>
+            <div>
 
-        <div>
+                <Hamburger onClick={ handleMenu }>
+                    { openMenu === false 
+                        ? <Image className="open" src={btnOpen} alt="Botón de menú" />
+                        : <Image className="close" src={btnClose} alt="Botón de menú" />
+                    }  
+                </Hamburger>
 
-            <Hamburger onClick={ handleMenu }>
-                { openMenu === false 
-                    ? <Image className="open" src={btnOpen} alt="Botón de menú" />
-                    : <Image className="close" src={btnClose} alt="Botón de menú" />
-                }  
-            </Hamburger>
+                <UiMenu visible={openMenu}>
+                    
+                <MenuTitle color={"#fbc330"}>Menú</MenuTitle>
 
-            <MobileNav visible={openMenu} handleMenu={handleMenu}/>
+                <P onClick={ handleMenu } >
+                    <Link 
+                    href={"/"} 
+                    >Inicio</Link>
+                </P>
 
-        </div>
+                <P onClick={ handleMenu } >
+                    <Link 
+                    href={"/inscripciones"}
+                    >Inscribirme </Link>
+                </P>
+
+                </UiMenu>
+
+            </div>
+        </>
     )
 
 }

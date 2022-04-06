@@ -6,13 +6,13 @@ width:100%;
 display:flex;
 justify-content:center;
 align-items:center;
-background-color: #1e1e1e;
+background-color: #DC3FC3;
 @media screen and (min-width:500px){
     height:10vh;
 }
 `
 const Desarrollador = styled.a`
-color:#c83067;
+color:#1e1e1e;
 `
 const TextFooter = styled(P)`
 color:#f4f4f4;
@@ -24,7 +24,7 @@ const Footer = ()=>{
     return(
         <BoxFooter>
             <TextFooter>
-                2021 Revolution Sport | Desarrollado por 
+                2022 Revolution Sport | Desarrollado por 
                 <Desarrollador href='https://rokeweb-peru.com'> Roke Web Perú</Desarrollador>
             </TextFooter>
         </BoxFooter>

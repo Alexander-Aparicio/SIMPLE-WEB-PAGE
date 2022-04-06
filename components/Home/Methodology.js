@@ -5,7 +5,7 @@ import imgMetodologia from "../../public/academiadebaile.png"
 import corner from "../../public/cornerOrange.png"
 
 const MethodologySection = styled(ContentBox)`
-margin:4% 0% 4% 0%;
+margin:4% 0% 0% 0%;
 padding-top: 30px;
 position: relative;
 @media (min-width: 1060px){

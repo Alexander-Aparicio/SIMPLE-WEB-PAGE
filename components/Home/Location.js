@@ -5,7 +5,6 @@ import facebook from "../../public/logos/facebook.svg"
 import instagram from "../../public/logos/instagram.svg"
 import celular from "../../public/logos/celular.svg"
 import ubicacion from "../../public/logos/ubicacion.svg"
-// import MyMap from "./GoogleMaps";
 
 const BoxUbicacion = styled(Div)`
 flex-direction:column;
@@ -28,34 +27,20 @@ const LinkRedSocial = styled.a`
 max-width:70px;
 margin: 10px 30px;
 `
-
-// const LogoRedSocial = styled.img`
-// width:100%;
-// `
 const ContactoDirect = styled(Div)`
 padding-top:20px;
 flex-wrap:wrap;
 justify-content: space-evelyn;
 `
-
 const Celular = styled(Div)`
 width:auto;
 `
-
 const Direccion = styled(Div)`
 width:auto;
 `
-
-// const Icons = styled.img`
-// max-width:40px;
-// margin-bottom:14px;
-// margin-top:20px;
-// `
-
 const TextUb = styled(P)`
 text-align:center;
 `
-
 const Mapa = styled(Div)`
 margin-top:30px;
 border:solid 2px #51515120;
@@ -91,10 +76,6 @@ const Ubicacion = ()=>{
                 </TextUb>
 
             </ContactoDirect>
-
-            {/* <Mapa>
-                <MyMap />                
-            </Mapa> */}
 
         </BoxUbicacion>
 

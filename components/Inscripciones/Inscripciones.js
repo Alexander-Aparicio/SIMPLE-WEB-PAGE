@@ -18,6 +18,8 @@ border-radius: 15px;
 padding:50px 5px;
 padding-left: 15px;
 border: solid 1px rgba(118,0,120,0.1);
+box-shadow: 1px 1px 1px 1px #0005;
+margin:2%;
 `
 
 const Title = styled(TitleH2)`
@@ -37,11 +39,13 @@ const Inscription =()=>{
         <InscriptionSection>
             <Box>
                 <Title>Proceso de Inscripción</Title>
+
                <Lista>
-                <li><Text>Llena el formulario.</Text></li> 
-                <li><Text>Escríbenos al WhatsApp pidiendo la confirmación de tu registro de inscripción.</Text></li> 
-                <li><Text>Realiza el pago y envia la constancia (imagen) por WhatsApp para enviarte tu recibo.</Text></li> 
-                <li><Text>Listo eso fue todo, ya formas parte de la academia de baile</Text></li> 
+                <li><Text>Llena el formulario para separar una clase de muestra.</Text></li> 
+                <li><Text>Escríbenos al WhatsApp pidiendo la confirmación de tu registro para tu clase.</Text></li> 
+                <li><Text>Participa de la clase y al terminar si te gustó te inscribes.</Text></li> 
+                <li><Text>Realiza el pago y envía la constancia (imagen) por WhatsApp para enviarte tu recibo.</Text></li> 
+                <li><Text>Eso fue todo, te esperamos para tu próxima clase 😃.</Text></li> 
                </Lista>
 
             </Box>

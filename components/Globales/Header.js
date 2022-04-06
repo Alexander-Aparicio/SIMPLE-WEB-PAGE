@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from 'next/link'
-import {useState} from "react"
 import { useRouter } from "next/router"
 import useWindowDimensions from "../../helpers/WindowDimension"
 import Logotipo from "../../public/logo-kpop-dance-revolution.png"
@@ -19,7 +18,7 @@ const Logo = ({nameOne, nameTwo, logo})=>{
     )
 }
 
-const Navegation =( {home, blog, tienda, clase} )=>{
+const Navegation =( {home, blog} )=>{
 
     const router = useRouter()
 
@@ -43,24 +42,6 @@ const Navegation =( {home, blog, tienda, clase} )=>{
                     >{blog}</Link>
                 </OptionMenu>
             ) : null}
-            
-            {tienda ? (
-                <OptionMenu >
-                    <Link 
-                    href={"/tienda"}
-                    // className={({isActive})=> isActive ? "seleccionado" :"noSeleccionado"}
-                    >{tienda}</Link>
-                </OptionMenu>
-            ): null}
-
-            {clase ? (
-                <OptionMenu>
-                    <Link 
-                    href={"/clase-gratis"}
-                    // className={({isActive})=> isActive ? "seleccionado" :"noSeleccionado"}
-                    >{clase}</Link>
-                </OptionMenu>
-            ): null}
             
         </Navbar>
 

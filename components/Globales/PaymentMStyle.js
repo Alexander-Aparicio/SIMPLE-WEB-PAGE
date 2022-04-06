@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { P, TitleH3 } from "./StyleBase";
 
 const SectionMediosPago = styled.article`
-    margin:4% 0% 4% 0%;
+    margin:4% 0% 0% 0%;
     width: 100%;
-    padding: 0px 5% 20px 5%;
+    padding: 0px 5% 30px 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -4,7 +4,7 @@ import { ContentBox, TextBox, P, TitleH2, ImgBox } from "../Globales/StyleBase";
 import cornerInf from "../../public/cornerLeft.png"
 
 const PricingSection = styled(ContentBox)`
-margin:4% 0% 4% 0%;
+margin:0% 0% 4% 0%;
 padding-bottom: 5%;
 box-shadow: 1px 1px 2px #0003;
 position: relative;

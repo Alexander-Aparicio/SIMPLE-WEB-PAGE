@@ -33,7 +33,7 @@ const useForm = ( initial,validations, validationsSubmit )=>{
         setLoading(false)
 
     }
-    // && Object.keys(validationsSubmit(form,x)).length === 0
+   
     const handleSubmit = (e)=>{
 
         e.preventDefault()
