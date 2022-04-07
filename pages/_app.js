@@ -36,8 +36,8 @@ const GlobalStyle = createGlobalStyle`
         min-height:81.5vh;
     }
     @media (min-width:1500px){
-        border-left:solid 1px #51515140;
-        border-right:solid 1px #51515140;
+        border-left:solid 1px #0002;
+        border-right:solid 1px #0002;
     }
   }
   main .cornerRight{

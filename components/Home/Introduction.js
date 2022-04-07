@@ -27,7 +27,7 @@ const Introduction = ()=>{
             <VideoBox>
                 <Video 
                 url="https://youtu.be/DWebn9Fy7xg"
-                volumen={1}
+                volumen={0.5}
                 width={'100%'}
                 height={'100%'} 
                 className="reproductor"

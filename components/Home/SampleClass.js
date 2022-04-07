@@ -55,7 +55,7 @@ const SampleClass = ()=>{
 
             <VideoBox>
                 <Video 
-                url="http://localhost:3000/SexyGirl.mp4"
+                url="https://youtu.be/eIpjDC52htk"
                 volumen={0.5}
                 width={'100%'}
                 height={'100%'} 

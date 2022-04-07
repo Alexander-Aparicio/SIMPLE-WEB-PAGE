@@ -9,7 +9,9 @@ const Encabezado = styled.header`
     display:flex;
     justify-content:space-between;
     background-color:${props => (props.position ? props.background :'transparent') };
-    border-bottom: solid 1px #f4f4f424;
+    border-bottom: solid 1px #0002;
+    border-left: solid 1px #0002;
+    border-right: solid 1px #0002;
     padding-left:5%;
     padding-right:5%;
     position:${props => (props.position ? props.position :'fixed') };
