@@ -48,7 +48,7 @@ const Metodologia=()=>{
             </Card>
             
             <Box>
-                <Title>Metología</Title>
+                <Title>Metodología</Title>
                 <Text>
                     Calentamiento.<br/>
                     Explicación de los pasos a través de técnicas de baile con ayuda de los espejos.<br/>

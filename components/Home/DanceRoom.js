@@ -41,7 +41,7 @@ const DanceRoom =()=>{
             <Box>
                 <Title>Instalaciones</Title>
                 <Text>
-                    El local se encuentra en un trecer piso, es un ambiente 
+                    El local se encuentra en un tercer piso, es un ambiente 
                     ventilado y cuenta con 2 baños. En las imágenes se puede 
                     apreciar el ambiente donde se dictan las clases.
                 </Text>

@@ -42,7 +42,7 @@ const SampleClass = ()=>{
                 <Title>¿Estas en duda o no sabes si es para ti?</Title>
                 <Text>
                 Te invitamos a una clase sin compromiso de inscripción, si 
-                al finalizar sientes que es lo que búscabas te inscribes y 
+                al finalizar sientes que es lo que buscabas te inscribes y 
                 si no es así no hay problema.
                 <br/>
                 En Revolution Dance nos interesa que estes motivado(a) y 

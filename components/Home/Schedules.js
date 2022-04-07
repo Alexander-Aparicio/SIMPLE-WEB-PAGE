@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { CardText, ContentBox, ImgBox , P, TitleH2 } from "../Globales/StyleBase";
-import Noelia from "../../public/prof-Noelia-Castro.png"
+import Noelia from "../../public/prof-Noelia-Castro.jpg"
 import clip from "../../public/clip.svg"
 
 const ScheduleSection = styled(ContentBox)`
