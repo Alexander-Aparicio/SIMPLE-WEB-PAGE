@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styled from "styled-components";
 import Image from "next/image"
 import { ContentBox, TextBox, P, TitleH2, ImgBox } from "../Globales/StyleBase";
@@ -65,7 +66,7 @@ const Price = ()=>{
                 <Text>Comprende 4 clases de 2 horas</Text>
             </Box>
 
-            <Box><Button>¡Quiero Inscribirme!</Button></Box>
+            <Box><Link href={"/inscripciones"}><Button>¡Quiero Inscribirme!</Button></Link></Box>
 
         </PricingSection>
     )

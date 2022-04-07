@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styled from "styled-components"
 import { TextBox,P, ContentBox, TitleH2, BoxCta, CtaButton } from "../Globales/StyleBase"
 import { BoxVideo, Video } from "../Globales/Video"
@@ -49,7 +50,7 @@ const SampleClass = ()=>{
                 <strong>¡No pierdas esta oportunidad!</strong>
                 </Text>
                 
-                <Button>Separar Clase de Muestra</Button>
+                <Link href={'/inscripciones'}><Button>Separar Clase de Muestra</Button></Link>
                 
             </Box>
 

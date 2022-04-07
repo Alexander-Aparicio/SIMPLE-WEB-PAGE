@@ -40,6 +40,7 @@ width:auto;
 `
 const TextUb = styled(P)`
 text-align:center;
+margin-bottom: 10px;
 `
 const Mapa = styled(Div)`
 margin-top:30px;
@@ -55,16 +56,16 @@ const Ubicacion = ()=>{
             <TitleUb>Contáctanos y visítanos</TitleUb>
 
             <RedesSociales>
-                <LinkRedSocial href="https://www.facebook.com/tenisdemesa.rs/" rel="nofollow noreferrer" target="_blank"><Image src={facebook} alt="icon-facebook"  width={100} height={100} /></LinkRedSocial>
-                <LinkRedSocial className="instagram" href="https://www.instagram.com/revolution_tenisdemesa/" rel="nofollow noreferrer" target="_blank"><Image src={instagram} alt="icon-instagram" width={100} height={100} /></LinkRedSocial>
+                <LinkRedSocial href="https://www.facebook.com/RevolutionDanceStudio.Lima" rel="nofollow noreferrer" target="_blank"><Image src={facebook} alt="icon-facebook"  width={100} height={100} /></LinkRedSocial>
+                <LinkRedSocial className="instagram" href="https://www.instagram.com/revolution_dstudio/" rel="nofollow noreferrer" target="_blank"><Image src={instagram} alt="icon-instagram" width={100} height={100} /></LinkRedSocial>
             </RedesSociales>
 
             <ContactoDirect>
 
                 <Celular>
                     <Image src={celular} alt="icon-mobile" width={80} height={80} />
-                    <TextUb>+51 957 731 940</TextUb>
-                    <TextUb>+51 997 019 692</TextUb>
+                    <TextUb>+51 940767038</TextUb>
+                    
                 </Celular>
 
                 <Direccion>

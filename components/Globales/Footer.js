@@ -12,7 +12,8 @@ background-color: #DC3FC3;
 }
 `
 const Desarrollador = styled.a`
-color:#1e1e1e;
+color:#fff;
+font-weight: bold;
 `
 const TextFooter = styled(P)`
 color:#f4f4f4;
@@ -25,7 +26,7 @@ const Footer = ()=>{
         <BoxFooter>
             <TextFooter>
                 2022 Revolution Sport | Desarrollado por 
-                <Desarrollador href='https://rokeweb-peru.com'> Roke Web Perú</Desarrollador>
+                <Desarrollador href='https://rokeweb-peru.com' rel="nofollow noreferrer" target="_blank"> Roke Web Perú</Desarrollador>
             </TextFooter>
         </BoxFooter>
     )
