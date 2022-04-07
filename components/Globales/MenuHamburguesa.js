@@ -63,7 +63,6 @@ const MenuMobile = ()=>{
 
         setOpenMenu(!openMenu)
     }
-    console.log(openMenu)
 
     return(
         <>

@@ -31,6 +31,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang="es">
           <Head>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-PK1QEKDLQ0" />
+          <script dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PK1QEKDLQ0');
+            `,
+          }} />
           <meta name="author" content="Roke Web"></meta>
           <meta name="robots" content="noindex,nofollow" />
           <meta name="theme-color" content="#282C34"></meta>

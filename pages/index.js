@@ -17,7 +17,7 @@ export default function Home() {
   return (<>
     <Head>
       <title>Revolution Dance</title>
-      <meta name="Description" CONTENT="Academia de Baile Revolution. Aprende a bailar las coreografías de K-Pop de tus grupos favoritos." />
+      <meta name="Description" content="Academia de Baile Revolution. Aprende a bailar las coreografías de K-Pop de tus grupos favoritos." />
       {/* <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/> */}
       <link rel="canonical" href="http://www.revolutiondancestudioperu.com/"></link>
       <meta property="og:url" content="http://www.revolutiondancestudioperu.com/"></meta>
