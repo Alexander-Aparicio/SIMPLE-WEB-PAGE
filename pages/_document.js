@@ -42,7 +42,7 @@ export default class MyDocument extends Document {
             `,
           }} />
           <meta name="author" content="Roke Web"></meta>
-          <meta name="robots" content="noindex,nofollow" />
+          <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
           <meta name="theme-color" content="#282C34"></meta>
           <meta property="og:locale" content="es_PE"></meta>
           <link rel="icon" href="/dance_revolution.ico" />
