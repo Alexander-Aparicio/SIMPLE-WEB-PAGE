@@ -5,12 +5,12 @@ const BoxVideo = styled.div`
 position:relative;
 width:100%;
 max-width:400px;
-max-height:300px;
+height:250px;
 padding-right: 0%;
 border-radius:7px;
 background-color: #FAF5FA;
 border: solid 1px #E2DDDD;
-padding: 2%;
+padding: 1.2%;
 margin-left: 15px;
 margin-right: 15px;
 .reproductor{
