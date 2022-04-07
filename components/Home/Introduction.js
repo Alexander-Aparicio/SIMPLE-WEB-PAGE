@@ -44,7 +44,7 @@ const Introduction = ()=>{
 
                 📌 Tienes la posibilidad de formar parte del elenco de la academia.<br/>
 
-                📌 Accedes a descuentos para clases de tenis de mesa en la academia revolution.
+                📌 Accedes a descuentos para clases de tenis de mesa en la academia.
                 </Text>
             </Box>
 

@@ -40,8 +40,9 @@ const FrequentQuestions = ()=>{
 
             <Title2>¿En cuánto tiempo se puede aprender una coreografía completa de k-pop?</Title2>
             <Text>
-                Si no tienes mucha experiencia lo podrías lograr en un mes con ensayos de 2 veces por semana de 1h 30' aproximadamente, 
-                ten en cuenta que esto puede variar dependiendo de tu facilidad para aprender y la complejidad de la coreografía.
+                Si no tienes mucha experiencia lo podrías lograr en un mes con ensayos de 1h dos veces 
+                por semana o en ensayos de 2h una vez a la semana, ten en cuenta que esto puede variar 
+                dependiendo de tu facilidad para aprender y la complejidad de la coreografía.
             </Text>
 
             <Title2>¿El género de baile “K-pop” es un estilo único?</Title2>
