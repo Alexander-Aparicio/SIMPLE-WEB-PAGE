@@ -27,7 +27,7 @@ const WhatsApp = ()=>{
         <div>
 
             <Contact>
-                <a href="https://api.whatsapp.com/send?phone=51940767038&text=Hola%20Revolution%20Dance%201" rel="nofollow noreferrer" target="_blank" >
+                <a href="https://api.whatsapp.com/send?phone=51940767038&text=Hola%20Revolution%20Dance%20😃" rel="nofollow noreferrer" target="_blank" >
                     <Image src={whatsApp} width={70} height={70} alt="Botón de whatsapp" />
                 </a> 
             </Contact>
