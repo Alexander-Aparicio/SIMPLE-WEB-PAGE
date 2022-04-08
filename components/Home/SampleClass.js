@@ -2,6 +2,7 @@ import Link from "next/link"
 import styled from "styled-components"
 import { TextBox,P, ContentBox, TitleH2, BoxCta, CtaButton } from "../Globales/StyleBase"
 import { BoxVideo, Video } from "../Globales/Video"
+import * as fbq from '../../lib/fpixel'
 
 const SampleClassSection = styled(ContentBox)`
 margin:4% 0% 4% 0%;
@@ -35,6 +36,11 @@ line-height: 2;
 `
 
 const SampleClass = ()=>{
+
+    const handleClick = () => {
+        fbq.event('Purchase', { cta: 'sampleClass', value: 2 })
+    }
+
     return(
         <SampleClassSection>
 
@@ -50,7 +56,7 @@ const SampleClass = ()=>{
                 <strong>¡No pierdas esta oportunidad!</strong>
                 </Text>
                 
-                <Link href={'/inscripciones'}><Button>Separar Clase de Muestra</Button></Link>
+                <Link href={'/inscripciones'}><Button onClick={handleClick}>Separar Clase de Muestra</Button></Link>
                 
             </Box>
 

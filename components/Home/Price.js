@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Image from "next/image"
 import { ContentBox, TextBox, P, TitleH2, ImgBox } from "../Globales/StyleBase";
 import cornerInf from "../../public/cornerLeft.png"
+import * as fbq from '../../lib/fpixel'
+
 
 const PricingSection = styled(ContentBox)`
 margin:0% 0% 4% 0%;
@@ -57,6 +59,11 @@ margin: 20px;
 `
 
 const Price = ()=>{
+
+    const handleClick = () => {
+        fbq.event('Purchase', { cta: 'price', value: 1 })
+    }
+
     return(
         <PricingSection>
             <Card><Image src={cornerInf} /></Card>
@@ -66,7 +73,7 @@ const Price = ()=>{
                 <Text>Comprende 4 clases de 2 horas</Text>
             </Box>
 
-            <Box><Link href={"/inscripciones"}><Button>¡Quiero Inscribirme!</Button></Link></Box>
+            <Box><Link href={"/inscripciones"}><Button onClick={handleClick}>¡Quiero Inscribirme!</Button></Link></Box>
 
         </PricingSection>
     )

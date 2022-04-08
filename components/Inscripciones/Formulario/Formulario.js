@@ -3,6 +3,7 @@ import useForm from "../../../hooks/HookFormulario"
 import { Check, Checkbox, Form, FormBox, Input, Label, TextForm, TipoInscripcion, TitleForm } from "./FormStyle"
 import { validations, validationsSubmit } from "./ValidateForm"
 import { useState,useEffect } from "react"
+import * as fbq from '../../../lib/fpixel'
 
 const initial = {
     estado:"ParaMi",
@@ -39,6 +40,10 @@ const FormAcademia  = ()=>{
         setHorarios(Elegidos.length)
 
     },[form.check1, form.check2, form.check3, form.check4])
+
+    const handleClick = () => {
+        fbq.event('Purchase', { cta: 'form', value: 3 })
+    }
 
     return(
 
@@ -160,6 +165,7 @@ const FormAcademia  = ()=>{
             className="ctaForm"
             type="submit"
             value="Separar mi Clase"
+            onClick={handleClick}
             />
             </Form>
 

@@ -49,7 +49,7 @@ const useForm = ( initial,validations, validationsSubmit )=>{
 
             const { Post } = RequestF()
 
-            Post('https://formsubmit.co/ajax/alexdel2019@gmail.com', {
+            Post('https://formsubmit.co/ajax/alexdel2022@gmail.com', {
                 body:form,
                 headers:{
                     "Content-Type":"application/json",
