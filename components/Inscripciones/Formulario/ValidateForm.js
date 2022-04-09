@@ -67,12 +67,12 @@ const validationsSubmit = (form)=>{
         errores.dni = "Este campo solo acepta números y debe contener 8 caracteres."
     }
 
-    if(!form.select.trim()){
-        errores.select = "Este campo es necesario"
-    }
-    if(form.check1 !== undefined && Number( elegidos.length ) !== Number(form.select)){
-        errores.check = "Debe marcar una cantidad de horarios igual a la frecuencia semanal"
-    }
+    // if(!form.select.trim()){
+    //     errores.select = "Este campo es necesario"
+    // }
+    // if(form.check1 !== undefined && Number( elegidos.length ) !== Number(form.select)){
+    //     errores.check = "Debe marcar una cantidad de horarios igual a la frecuencia semanal"
+    // }
     return errores
 
 }

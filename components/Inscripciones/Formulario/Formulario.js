@@ -11,7 +11,7 @@ const initial = {
     dni:"",
     celular:"",
     edad:"",
-    select:"",
+    // select:"",
     check1:false,
     check2:false,
     check3:false,
@@ -42,7 +42,7 @@ const FormAcademia  = ()=>{
     },[form.check1, form.check2, form.check3, form.check4])
 
     const handleClick = () => {
-        fbq.event('Purchase', { cta: 'form', value: 3 })
+        fbq.event('Schedule', { section: 'form' })
     }
 
     return(
@@ -123,7 +123,7 @@ const FormAcademia  = ()=>{
             {form.estado ==="MiHijo" && form.edad && errores.edadMenor ?<TextForm color={'red'}>{errores.edadMenor}</TextForm> : null}
             {form.estado ==="MiHijo"| form.estado ==="ParaMi" && form.edad && errores.edadF ?<TextForm color={'red'}>{errores.edadF}</TextForm> : null}
 
-            <select value={form.select} name="select" onChange={handleChange} onBlur={handleBlur}>
+            {/* <select value={form.select} name="select" onChange={handleChange} onBlur={handleBlur}>
                 <option value="">Frecuencia semanal</option>
                 <option value='1'>Una vez por semana</option>
                 <option value='2'>Dos veces por semana</option>
@@ -152,7 +152,7 @@ const FormAcademia  = ()=>{
              </Label>
             </>
 
-            ): null}
+            ): null} */}
 
 
             {errores.check ?<TextForm>{errores.check}</TextForm>: null}
