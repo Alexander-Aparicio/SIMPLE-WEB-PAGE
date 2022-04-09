@@ -25,8 +25,8 @@ export default function Home() {
       <meta property="og:title" content="Academia de baile Revolution - Kpop"></meta>
       <meta property="og:description" content="🤗 Aprende a bailar las mejores coreografías de tus grupos favoritos de K-pop."></meta>
       <meta property="og:site_name" content="Academia de baile Revolution Dance"></meta>
-      <meta property="og:image" content="http://www.revolutiondancestudioperu.com/academia.jpg"></meta>
-      <meta property="og:image:secure_url" content="http://www.revolutiondancestudioperu.com/academia.jpg"></meta>
+      <meta property="og:image" content="http://www.revolutiondancestudioperu.com/logo.jpg"></meta>
+      <meta property="og:image:secure_url" content="http://www.revolutiondancestudioperu.com/logo.jpg"></meta>
       <meta property="og:image:alt" content="kpop"></meta>
       <meta property="og:image:width" content="600"></meta>
       <meta property="og:image:height" content="458"></meta>
@@ -34,7 +34,7 @@ export default function Home() {
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:description" content="🤗 Aprende a bailar las mejores coreografías de tus grupos favoritos de K-pop."></meta>
       <meta name="twitter:title" content="➤Academia de baile Revolution"></meta>
-      <meta name="twitter:image" content="http://www.revolutiondancestudioperu.com/academia.jpg"></meta>
+      <meta name="twitter:image" content="http://www.revolutiondancestudioperu.com/logo.jpg"></meta>
 
     </Head>
 
