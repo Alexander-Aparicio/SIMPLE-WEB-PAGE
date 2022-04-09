@@ -61,7 +61,7 @@ margin: 20px;
 const Price = ()=>{
 
     const handleClick = () => {
-        fbq.event('Lead', { section: 'price' })
+        fbq.event('Purchase', { currency: 'USD', value: 25 })
     }
 
     return(

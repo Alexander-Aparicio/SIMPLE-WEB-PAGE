@@ -42,7 +42,7 @@ const FormAcademia  = ()=>{
     },[form.check1, form.check2, form.check3, form.check4])
 
     const handleClick = () => {
-        fbq.event('Schedule', { section: 'form' })
+        fbq.event('Lead')
     }
 
     return(

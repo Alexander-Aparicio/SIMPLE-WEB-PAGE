@@ -38,7 +38,7 @@ line-height: 2;
 const SampleClass = ()=>{
 
     const handleClick = () => {
-        fbq.event('Schedule', { section: 'sampleClass'})
+        fbq.event('Schedule')
     }
 
     return(
