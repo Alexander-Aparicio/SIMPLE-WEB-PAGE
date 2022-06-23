@@ -48,27 +48,19 @@ const Inscription = () => {
 
         <Lista>
           <li>
-            <Text>Llena el formulario para separar una clase de muestra.</Text>
+            <Text>Llena el formulario para registrar tu asistencia.</Text>
           </li>
           <li>
             <Text>
               Escríbenos al WhatsApp pidiendo la confirmación de tu registro
-              para tu clase.
+              para tu clase (Importante).
             </Text>
           </li>
           <li>
             <Text>
-              Participa de la clase y al terminar si te gustó te inscribes.
+              Puedes realizar el pago una vez confirmado tu registro o también
+              en la misma academia antes de inciar la clase.
             </Text>
-          </li>
-          <li>
-            <Text>
-              Realiza el pago y envía la constancia (imagen) por WhatsApp para
-              enviarte tu recibo.
-            </Text>
-          </li>
-          <li>
-            <Text>Eso fue todo, te esperamos para tu próxima clase 😃.</Text>
           </li>
         </Lista>
       </Box>
