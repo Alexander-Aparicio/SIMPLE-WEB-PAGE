@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { CardText, ContentBox, ImgBox , P, TitleH2 } from "../Globales/StyleBase";
-import Noelia from "../../public/prof-Noelia-Castro.png"
+import Noelia from "../../public/noelia-castro.jpeg"
 import clip from "../../public/clip.svg"
 
 const ScheduleSection = styled(ContentBox)`
@@ -60,27 +60,43 @@ border-radius: 15px;
 
 const Schedules = ()=>{
 
-    return(
-        <ScheduleSection>
+    return (
+      <ScheduleSection>
+        <Box>
+          <div>
+            <Image src={clip} width={40} height={60} />
+          </div>
+          <Title>Horarios:</Title>
+          <Shedule>Baile Moderno :</Shedule>
+          <Text>
+            <strong>De 9 a 12 años:</strong>
+            <br />
+            Martes, jueves y sábados de 9 AM - 10 AM
+            <br />
+            <strong>De 13 años a más:</strong>
+            <br />
+            Martes, jueves y sábados de 11:30 AM - 12:30 PM
+          </Text>
+          <br />
+          <Shedule>K-Pop :</Shedule>
+          <Text>
+            <strong>De 13 años a más:</strong>
+            <br />
+            Martes, jueves y sábados de 10:15 AM - 11:15 AM
+          </Text>
+          <br />
+        </Box>
 
-            <Box>
-                <div>
-                <Image src={clip} width={40} height={60} />
-                </div>
-                
-                <Title>Horarios:</Title>
-                <Shedule>Sábados: 11 AM - 1 PM</Shedule>
-                <Text>
-                    Próximo nuevo horario:<br/>
-                    Sábados de 9 AM - 11 AM
-                </Text>
-            </Box>
-            
-            <Card>
-                <Image src={Noelia} width={673} height={430} alt={'Profesora Noelia'} />
-            </Card>
-        </ScheduleSection>
-    )
+        <Card maxHeight={'400px'} maxWidth={'400px'}>
+          <Image
+            src={Noelia}
+            width={400}
+            height={400}
+            alt={"Profesora Noelia"}
+          />
+        </Card>
+      </ScheduleSection>
+    );
 }
 
 export {

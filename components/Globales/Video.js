@@ -8,9 +8,9 @@ max-width:400px;
 height:250px;
 padding-right: 0%;
 border-radius:7px;
-background-color: #FAF5FA;
-border: solid 1px #E2DDDD;
-padding: 1.2%;
+/* background-color: #FAF5FA; */
+/* border: solid 1px #E2DDDD; */
+/* padding: 1.2%; */
 margin-left: 15px;
 margin-right: 15px;
 .reproductor{

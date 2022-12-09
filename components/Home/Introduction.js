@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Article, TextBox, P } from "../Globales/StyleBase";
+import { Article, TextBox, P, TitleH2 } from "../Globales/StyleBase";
 import { BoxVideo, Video } from "../Globales/Video";
 
 const IntroductionSection = styled(Article)`
@@ -34,16 +34,17 @@ const Introduction = () => {
       </VideoBox>
 
       <Box>
+        <TitleH2 margin={"20px 0px 7px 0px"}>¡Talleres de Verano 2023!</TitleH2>
         <Text>
-          📌 Clases dirigido para adolescentes y jóvenes a partir de 13 años en
-          adelante. <br />
+          📌 Clases de baile Moderno dirigido para niños y adolescentes.
+          <br />
+          📌 Clases de baile de K-Pop dirigido para adolescentes y jóvenes.
+          <br />
           📌 Puedes venir con un acompañante (familiar, pareja o amigo).
           <br />
           📌 Los sábados se graban las clases y se comparte los videos.
           <br />
-          📌 Tienes la posibilidad de formar parte del elenco de la academia.
-          <br />
-          📌 Accedes a descuentos para clases de tenis de mesa en la academia.
+          📌 Obtienes una hora gratis de mesa libre en Tenis de mesa.
         </Text>
       </Box>
     </IntroductionSection>

@@ -25,13 +25,13 @@ const Card = styled(ImgBox)`
   }
 `;
 const Box = styled(TextBox)`
-  max-width: 300px;
+  max-width: 320px;
 `;
 const Title = styled(TitleH2)`
   text-align: left;
   margin: 0;
-  font-family: "caveat", cursive;
-  font-size: 4rem;
+  /* font-family: "caveat", cursive; */
+  font-size: 3.2rem;
 `;
 const Text = styled(P)`
   color: #eb6a50;
@@ -46,6 +46,8 @@ const Mensualidad = styled(P)`
   text-align: center;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
 `;
 const Button = styled.button`
   background-color: #eb6a50;
@@ -68,10 +70,11 @@ const Price = () => {
         <Image src={cornerInf} />
       </Card>
       <Box>
-        <Title>Costo:</Title>
-        <Mensualidad>Mensualidad: S./100</Mensualidad>
-        <Text>Comprende 4 clases de 2 horas</Text>
-        <Mensualidad>Por clase: S./27</Mensualidad>
+        <Title>Costo único:</Title>
+        <Text>Comprende Enero y Febrero.</Text>
+        <Mensualidad>B. Moderno: S./250</Mensualidad>
+        <Mensualidad>K-Pop: S./250</Mensualidad>
+        <Mensualidad>B.Moderno + Kpop: S./400</Mensualidad>
       </Box>
 
       <Box>

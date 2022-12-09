@@ -48,21 +48,20 @@ const Inscription = () => {
 
         <Lista>
           <li>
-            <Text>Llena el formulario para registrar tu asistencia.</Text>
+            <Text>Llena el formulario para registrar tus datos.</Text>
           </li>
           <li>
             <Text>
-              Escríbenos al WhatsApp pidiendo la confirmación de tu registro
-              para tu clase (Importante).
-            </Text>
-          </li>
-          <li>
-            <Text>
-              Puedes realizar el pago una vez confirmado tu registro o también
-              en la misma academia antes de inciar la clase.
+              Escríbenos al WhatsApp, confirma tu registro, elige tu horario,
+              realiza el pago y envíanos una foto del comprobante.
             </Text>
           </li>
         </Lista>
+        <Text>
+          <strong>Nota:</strong> Puedes realizar tu inscripción en la academia
+          los días sábados de 3:30pm a 5pm y los domingos de 11:30 am a 12:30
+          pm. <br/> El pago se debe realizar por algún medio digital.
+        </Text>
       </Box>
 
       <Card>

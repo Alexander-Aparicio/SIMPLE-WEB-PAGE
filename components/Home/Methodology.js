@@ -41,32 +41,44 @@ line-height: 2;
 
 const Metodologia=()=>{
 
-    return(
-        <MethodologySection>
-            <Card className="cornerRight">
-                <Image src={corner}  alt={'esquina'} />
-            </Card>
-            
-            <Box>
-                <Title>Metodología</Title>
-                <Text>
-                    Calentamiento.<br/>
-                    Explicación de los pasos a través de técnicas de baile con ayuda de los espejos.<br/>
-                    Ejecución por parte de los alumnos.<br/>
-                    Ejecución de los pasos de menor a mayor velocidad.<br/>
-                    Charla final de retroalimentación (Feedback)<br/>
-                </Text>
-            </Box>
-            <Card>
-                <Image 
-                src={imgMetodologia} 
-                width={450} height={300} 
-                alt={'Academia de baile revolution'} 
-                />
-            </Card>
+    return (
+      <MethodologySection>
+        <Card className="cornerRight">
+          <Image src={corner} alt={"esquina"} />
+        </Card>
 
-        </MethodologySection>
-    )
+        <Box>
+          <Title>Metodología</Title>
+          <Text>
+            Tres clases por semana de 1h.
+            <br />
+            Cada semana se desarrolla una coregrafía.
+            <br />
+            Primer día de semana se da la base técnica en estilos necesarios.
+            <br />
+            En cada clase se realiza un calentamiento.
+            <br />
+            Explicación de los pasos con ayuda de
+            los espejos.
+            <br />
+            Ejecución por parte de los alumnos.
+            <br />
+            Ejecución de los pasos de menor a mayor velocidad.
+            <br />
+            Charla final de retroalimentación (Feedback)
+            <br />
+          </Text>
+        </Box>
+        <Card>
+          <Image
+            src={imgMetodologia}
+            width={450}
+            height={300}
+            alt={"Academia de baile revolution"}
+          />
+        </Card>
+      </MethodologySection>
+    );
 }
 
 export default Metodologia

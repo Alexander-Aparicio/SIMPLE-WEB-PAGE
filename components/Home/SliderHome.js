@@ -114,7 +114,7 @@ const Slider = () => {
          alt='Academia Revolution'>
 
           <SlideH>
-            <TitlePage>K-POP: Clases presenciales de Baile.</TitlePage>
+            <TitlePage>Clases presenciales de Baile.</TitlePage>
             <Text>
                 Desarrolla tus habilidades artísticas.
             </Text>
@@ -130,9 +130,9 @@ const Slider = () => {
             alt='Academia Revolution'>
 
             <SlideH>
-            <TitlePage>K-POP: Clases presenciales de Baile.</TitlePage>
+            <TitlePage>¡Talleres de Verano 2023!</TitlePage>
             <Text>
-              Desarrolla tus habilidades artísticas.
+              Aprender sobre Baile Moderno y Kpop.
             </Text>
             </SlideH>
           </MySlide>
@@ -146,9 +146,9 @@ const Slider = () => {
           alt='Academia Revolution'>
 
           <SlideH>
-          <TitlePage>Disfruta de las mejores coreografías</TitlePage>
+          <TitlePage>¡Baile Moderno!</TitlePage>
           <Text>
-            Horario: Sábados de 11am - 1pm
+            Horario: Martes, jueves y sábados
           </Text>
           </SlideH>
         </MySlide>
@@ -163,9 +163,9 @@ const Slider = () => {
           alt='Academia Revolution'>
 
           <SlideH>
-          <TitlePage>Disfruta de las mejores coreografías</TitlePage>
+          <TitlePage>¡Coreografías de K-pop!</TitlePage>
           <Text>
-            Horario: Sábados de 11am - 1pm.
+            Horario: Martes, jueves y sábados.
           </Text>
           </SlideH>
         </MySlide>
